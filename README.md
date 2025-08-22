@@ -18,7 +18,7 @@ A Python library for converting custom music DSL notation to MIDI files. Write m
 
 ```bash
 # Clone and install
-git clone <repository-url>
+git clone https://github.com/TethysPlex/SimpleMusic
 cd SimpleMusic
 uv venv && source .venv/bin/activate
 uv pip install -e .
@@ -73,7 +73,7 @@ This creates a simple 3-track arrangement with melody, bass, and chords.
 
 ## Documentation
 
-=� **Complete documentation available in the [`docs/`](docs/) directory:**
+**Complete documentation available in the [`docs/`](docs/) directory:**
 
 - **[Getting Started](docs/getting-started.md)** - Installation and first steps
 - **[DSL Syntax Reference](docs/dsl-syntax.md)** - Complete language documentation  
