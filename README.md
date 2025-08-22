@@ -20,8 +20,8 @@ A Python library for converting custom music DSL notation to MIDI files. Write m
 # Clone and install
 git clone https://github.com/TethysPlex/SimpleMusic
 cd SimpleMusic
-uv venv && source .venv/bin/activate
-uv pip install -e .
+uv venv
+uv sync
 ```
 
 ### Command Line Usage
