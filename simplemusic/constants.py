@@ -1,0 +1,98 @@
+"""
+Constants for the SimpleMusic DSL parser.
+"""
+
+NOTE_MAP = {'C': 0, 'D': 2, 'E': 4, 'F': 5, 'G': 7, 'A': 9, 'B': 11}
+
+DURATION_MAP = {
+    'w': 4.0,      # 全音符 = 4拍
+    'h': 2.0,      # 二分音符 = 2拍  
+    'q': 1.0,      # 四分音符 = 1拍
+    'e': 0.5,      # 八分音符 = 0.5拍
+    's': 0.25,     # 十六分音符 = 0.25拍
+    't': 0.125,    # 三十二分音符 = 0.125拍
+}
+
+INSTRUMENT_NAMES = {
+    'piano': 0, 'acoustic grand piano': 0, 'grand piano': 0,
+    'bright acoustic piano': 1, 'bright piano': 1,
+    'electric grand piano': 2, 'electric grand': 2,
+    'honky-tonk piano': 3, 'honky-tonk': 3,
+    'electric piano': 4, 'electric piano 1': 4,
+    'electric piano 2': 5,
+    'harpsichord': 6,
+    'clavinet': 7, 'clav': 7,
+    'celesta': 8,
+    'glockenspiel': 9,
+    'music box': 10,
+    'vibraphone': 11, 'vibes': 11,
+    'marimba': 12,
+    'xylophone': 13,
+    'tubular bells': 14,
+    'dulcimer': 15,
+    'drawbar organ': 16, 'hammond organ': 16, 'hammond': 16,
+    'percussive organ': 17,
+    'rock organ': 18,
+    'church organ': 19, 'organ': 19,
+    'reed organ': 20,
+    'accordion': 21,
+    'harmonica': 22,
+    'tango accordion': 23,
+    'acoustic guitar': 24, 'guitar': 24, 'acoustic guitar nylon': 24,
+    'acoustic guitar steel': 25, 'steel guitar': 25,
+    'electric guitar jazz': 26, 'jazz guitar': 26,
+    'electric guitar': 27, 'electric guitar clean': 27,
+    'electric guitar muted': 28,
+    'overdriven guitar': 29, 'overdrive guitar': 29,
+    'distortion guitar': 30,
+    'guitar harmonics': 31,
+    'acoustic bass': 32, 'bass': 32,
+    'electric bass finger': 33, 'electric bass': 33,
+    'electric bass pick': 34,
+    'fretless bass': 35,
+    'slap bass 1': 36, 'slap bass': 36,
+    'slap bass 2': 37,
+    'synth bass 1': 38, 'synth bass': 38,
+    'synth bass 2': 39,
+    'violin': 40,
+    'viola': 41,
+    'cello': 42,
+    'contrabass': 43, 'double bass': 43,
+    'tremolo strings': 44,
+    'pizzicato strings': 45, 'pizzicato': 45,
+    'orchestral harp': 46, 'harp': 46,
+    'timpani': 47,
+    'string ensemble 1': 48, 'strings': 48, 'string ensemble': 48,
+    'string ensemble 2': 49,
+    'synth strings 1': 50, 'synth strings': 50,
+    'synth strings 2': 51,
+    'choir aahs': 52, 'choir': 52,
+    'voice oohs': 53,
+    'synth voice': 54, 'synth choir': 54,
+    'orchestra hit': 55,
+    'trumpet': 56,
+    'trombone': 57,
+    'tuba': 58,
+    'muted trumpet': 59,
+    'french horn': 60, 'horn': 60,
+    'brass section': 61, 'brass': 61,
+    'synth brass 1': 62, 'synth brass': 62,
+    'synth brass 2': 63,
+    'soprano sax': 64, 'soprano saxophone': 64,
+    'alto sax': 65, 'alto saxophone': 65, 'sax': 65, 'saxophone': 65,
+    'tenor sax': 66, 'tenor saxophone': 66,
+    'baritone sax': 67, 'baritone saxophone': 67,
+    'oboe': 68,
+    'english horn': 69,
+    'bassoon': 70,
+    'clarinet': 71,
+    'piccolo': 72,
+    'flute': 73,
+    'recorder': 74,
+    'pan flute': 75,
+    'blown bottle': 76, 'bottle': 76,
+    'shakuhachi': 77,
+    'whistle': 78,
+    'ocarina': 79,
+    'drums': 0,  # Will use channel 10
+}

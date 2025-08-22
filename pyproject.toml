@@ -1,0 +1,24 @@
+[project]
+name = "simplemusic"
+version = "0.1.0"
+description = "A Python library for converting custom music DSL notation to MIDI files"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "midiutil>=1.2.0"
+]
+
+[project.scripts]
+simplemusic = "simplemusic.cli:main"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
